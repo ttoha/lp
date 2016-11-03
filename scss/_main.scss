@@ -21,6 +21,17 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
 /* /reset */
 
 body {
@@ -54,10 +65,10 @@ h2 {
 .blue {color:#00aaff}
 
 .news {
-    display:table;
-    width:100%;
     margin:40px 0 0 0; padding:30px 0;
     border-top:1px #f1f7fa solid;
+
+    @include clearfix();
 }
 .news-list {
     margin:0 auto; padding:0;

@@ -1,5 +1,3 @@
-@import "compass/css3";
-
 .comments {
     padding:40px 0;
     border-bottom:1px #e9e9e9 solid;
@@ -24,8 +22,8 @@
 .comment-stars {
     margin:0 0 12px 0; padding:0;
     list-style:none;
-    display:table;
-    width:100%;
+
+    @include clearfix();
 }
 .comment-strars__item {
     float:left;

@@ -1,5 +1,3 @@
-@import "compass/css3";
-
 .download-bottom {
     padding:40px 0;
 }
@@ -51,9 +49,9 @@
     background-color:#fafdff;
     border-top:1px #e5eaec solid;
     border-bottom:1px #e5eaec solid;
-    display:table;
-    width:100%;
     padding:15px 0;
+
+    @include clearfix();
 }
 .nav-list {
     display:table;

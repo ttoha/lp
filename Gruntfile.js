@@ -4,41 +4,27 @@ module.exports = function (grunt) {
 
         watch : {
             compass: {
-                files: ['css/scss/*.scss'],
+                files: ['scss/*.scss'],
                 tasks: ['process']
             }
         },
-        cssmin: {
-          options: {
-            shorthandCompacting: false,
-            roundingPrecision: -1
-          },
-          target: {
-            files: [{
-              expand: true,
-              cwd: 'css',
-              src: ['main.css', '!*.min.css'],
-              dest: 'css',
-              ext: '.min.css'
-            }]
-          }
-        },
         concat: {
             dist: {
-                src: ['css/scss/compile/*.css'],
-                dest: 'css/main.css'
+                src: ['scss/*.scss'],
+                dest: 'css/main.scss'
             }
         },
         compass: {
             dist: {
                 options: {
-                    sassDir: 'css/scss',
-                    cssDir: 'css/scss/compile',
+                    sassDir: 'css',
+                    cssDir: 'css',
                     environment: 'development',
                     imagesDir: "images/",
                     generatedImagesDir: "images/sprites/",
                     generatedImagesPath: "images/sprites/",
-                    httpGeneratedImagesPath: "../images/sprites"
+                    httpGeneratedImagesPath: "../images/sprites",
+                    outputStyle: "compressed"
                 }
             }
         },
@@ -47,10 +33,9 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-contrib-sass");
     grunt.loadNpmTasks("grunt-contrib-watch");
     grunt.loadNpmTasks("grunt-contrib-concat");
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-newer');
 
 
-    grunt.registerTask('process', ['newer:compass', 'concat', 'cssmin']);
-    grunt.registerTask('default', ['compass', 'concat', 'cssmin', 'watch']);
+    grunt.registerTask('process', ['concat', 'newer:compass']);
+    grunt.registerTask('default', ['concat', 'compass', 'watch']);
 };
