@@ -1,0 +1,119 @@
+@import "compass/css3";
+
+.header {}
+.header-top {
+    background-color:#fafdff;
+    box-shadow:0 0 8px -1px rgba(2,2,2,.5);
+}
+.header-top__inner {
+    padding:14px 0;
+    position:relative;
+
+    &:before {
+        content:'';
+        width:10px; height:10px;
+        position:absolute;
+        left:180px; bottom:-5px;
+        background-color:#fafdff;
+
+        @include box-shadow(3px 3px 3px 0 rgba(2,2,2,.1));
+        @include transform(rotate(45deg));
+    }
+}
+.logo {
+    top:7px;
+    position:relative;
+}
+.header-top__text {
+    text-align:center;
+    margin-top:-33px;
+    font-size:36px;
+    color:#646464;
+    font-family: 'ProximaNova-Light';
+
+    span {
+        display:inline-block;
+        border:1px #00b3ff solid;
+        border-radius:4px;
+        padding:0 4px;
+    }
+}
+
+.download {
+    margin-top:15px;
+}
+.download-left {
+    float:left;
+    width:385px;
+    padding-top:45px;
+}
+.download-steps {
+    margin:0; padding:0 0 20px 0;
+    list-style:none;
+}
+.download-steps__item {
+    border:1px #dde3e7 solid;
+    padding:22px 15px;
+    font-size:18px;
+    margin-bottom:20px;
+}
+.download-steps__item strong {
+    font-family: 'ProximaNova-Semibold';
+}
+.download-steps__item a {
+    font-family: 'ProximaNova-Bold';
+}
+.download-steps__ico {
+    vertical-align:middle;
+    margin-right:20px;
+}
+.download-steps__content {
+    padding-left:10px;
+}
+
+.download-right {}
+.download-mac {
+    padding-top:10px;
+}
+.download-ratings {}
+.download-ratings-counter {
+    float:left;
+    font-family:'ProximaNova-Light';
+    text-align:center;
+    margin:0 40px 0 110px;
+
+    &:after, &:before {
+        content:'';
+        width:23px; height:56px;
+        display:inline-block;
+        background:transparent url(../images/branch.png) no-repeat left top;
+    }
+
+    &:after {@include transform(scaleX(-1));}
+}
+.download-ratings-counter div {
+    display:inline-block;
+}
+.download-ratings-counter__title {
+    font-size:14px;
+    color:#969fa8;
+    white-space:nowrap;
+}
+.download-ratings-counter__count {
+    font-size:48px;
+    white-space:nowrap;
+    display:block;
+    color:#44aff9;
+    position:relative;
+    top:-5px; left:5px;
+}
+.download-ratings-counter__count sup {
+    font-size:30px;
+    color:#969fa8;
+    position:relative;
+    top:-14px;
+}
+.download-ratings-rating {
+    display:table;
+    padding-top:8px;
+}

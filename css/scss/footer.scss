@@ -1,0 +1,94 @@
+@import "compass/css3";
+
+.download-bottom {
+    padding:40px 0;
+}
+.download-bottom-left {
+    width:307px;
+    float:left;
+}
+.number-one {
+    width:150px;
+    margin:0 auto;
+    text-align:center;
+}
+.number-one__text {
+    font-size:14px;
+    font-weight:bold;
+    color:#464646;
+}
+.download-bottom-middle {
+    width:384px;
+    float:left;
+}
+.download-bottom-right {
+    width:307px;
+    float:right;
+}
+.trusted {
+    width:256px;
+    float:right;
+    background:transparent url(../images/world-map.png) no-repeat center top;
+    text-align:center;
+    font-size:12px;
+    color:#686868;
+    padding-bottom:35px;
+}
+.trusted__top {
+    width:125px;
+    margin:0 auto 2px;
+}
+.trusted__top strong {
+    font-weight:normal;
+    font-family: 'ProximaNova-Bold';
+}
+.trusted_count {
+    font-size:24px;
+    color:#1aa1eb;
+}
+.footer {}
+.nav {
+    background-color:#fafdff;
+    border-top:1px #e5eaec solid;
+    border-bottom:1px #e5eaec solid;
+    display:table;
+    width:100%;
+    padding:15px 0;
+}
+.nav-list {
+    display:table;
+    margin:0 auto; padding:0;
+    list-style:none;
+}
+.nav__item {
+    float:left;
+    padding:0 7px;
+}
+.nav__link {
+    font-size:14px;
+    color:#434343;
+    text-decoration:none;
+}
+
+.footer-content {
+    padding:15px 0;
+    text-align:center;
+    background-color:#f4fafd;
+
+    p {
+        font-size:12px;
+        color:#747a7d;
+        margin-bottom:5px;
+
+        a {
+            color:#018fd0;
+
+            &:hover {text-decoration:underline;}
+        }
+
+        &.copy {
+            padding-top:5px;
+            color:#989898;
+        }
+    }
+}

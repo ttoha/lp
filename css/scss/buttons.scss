@@ -1,0 +1,41 @@
+@import "compass/css3";
+
+.button {
+    margin:0; padding:0;
+    border:none;
+    color:#fff;
+    text-shadow:0 -1px 1px rgba(0,0,0,.26);
+    font-size:21px;
+    width:384px; height:80px;
+    position:relative;
+    cursor:pointer;
+    font-weight:bold;
+    font-family: 'ProximaNova-Semibold';
+    @include border-radius(4px);
+}
+.button-blue {
+    background-color:#00b3ff;
+    @include box-shadow(0 1px 0 1px #1b8bbf);
+
+    &:before {
+        content:'';
+        position:absolute;
+        right:18px; top:50%;
+        width:43px; height:43px;
+        background:transparent url(../images/download-ico.png) no-repeat left top;
+        @include transform (translate(0, -50%));
+    }
+}
+.button-small {
+    background:none;
+    margin:0; padding:0;
+    font-size:14px;
+    width:165px; height:45px;
+    cursor:pointer;
+    font-family: 'ProximaNova-Semibold';
+    @include border-radius(3px);
+}
+.button-small-blue {
+    border:1px #00abff solid;
+    color:#00aaff;
+}

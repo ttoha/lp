@@ -1,0 +1,163 @@
+/* line 4, ../header.scss */
+.header-top {
+  background-color: #fafdff;
+  box-shadow: 0 0 8px -1px rgba(2, 2, 2, 0.5);
+}
+
+/* line 8, ../header.scss */
+.header-top__inner {
+  padding: 14px 0;
+  position: relative;
+}
+/* line 12, ../header.scss */
+.header-top__inner:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 180px;
+  bottom: -5px;
+  background-color: #fafdff;
+  -moz-box-shadow: 3px 3px 3px 0 rgba(2, 2, 2, 0.1);
+  -webkit-box-shadow: 3px 3px 3px 0 rgba(2, 2, 2, 0.1);
+  box-shadow: 3px 3px 3px 0 rgba(2, 2, 2, 0.1);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 23, ../header.scss */
+.logo {
+  top: 7px;
+  position: relative;
+}
+
+/* line 27, ../header.scss */
+.header-top__text {
+  text-align: center;
+  margin-top: -33px;
+  font-size: 36px;
+  color: #646464;
+  font-family: 'ProximaNova-Light';
+}
+/* line 34, ../header.scss */
+.header-top__text span {
+  display: inline-block;
+  border: 1px #00b3ff solid;
+  border-radius: 4px;
+  padding: 0 4px;
+}
+
+/* line 42, ../header.scss */
+.download {
+  margin-top: 15px;
+}
+
+/* line 45, ../header.scss */
+.download-left {
+  float: left;
+  width: 385px;
+  padding-top: 45px;
+}
+
+/* line 50, ../header.scss */
+.download-steps {
+  margin: 0;
+  padding: 0 0 20px 0;
+  list-style: none;
+}
+
+/* line 54, ../header.scss */
+.download-steps__item {
+  border: 1px #dde3e7 solid;
+  padding: 22px 15px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* line 60, ../header.scss */
+.download-steps__item strong {
+  font-family: 'ProximaNova-Semibold';
+}
+
+/* line 63, ../header.scss */
+.download-steps__item a {
+  font-family: 'ProximaNova-Bold';
+}
+
+/* line 66, ../header.scss */
+.download-steps__ico {
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+/* line 70, ../header.scss */
+.download-steps__content {
+  padding-left: 10px;
+}
+
+/* line 75, ../header.scss */
+.download-mac {
+  padding-top: 10px;
+}
+
+/* line 79, ../header.scss */
+.download-ratings-counter {
+  float: left;
+  font-family: 'ProximaNova-Light';
+  text-align: center;
+  margin: 0 40px 0 110px;
+}
+/* line 85, ../header.scss */
+.download-ratings-counter:after, .download-ratings-counter:before {
+  content: '';
+  width: 23px;
+  height: 56px;
+  display: inline-block;
+  background: transparent url(../images/branch.png) no-repeat left top;
+}
+/* line 92, ../header.scss */
+.download-ratings-counter:after {
+  -moz-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+/* line 94, ../header.scss */
+.download-ratings-counter div {
+  display: inline-block;
+}
+
+/* line 97, ../header.scss */
+.download-ratings-counter__title {
+  font-size: 14px;
+  color: #969fa8;
+  white-space: nowrap;
+}
+
+/* line 102, ../header.scss */
+.download-ratings-counter__count {
+  font-size: 48px;
+  white-space: nowrap;
+  display: block;
+  color: #44aff9;
+  position: relative;
+  top: -5px;
+  left: 5px;
+}
+
+/* line 110, ../header.scss */
+.download-ratings-counter__count sup {
+  font-size: 30px;
+  color: #969fa8;
+  position: relative;
+  top: -14px;
+}
+
+/* line 116, ../header.scss */
+.download-ratings-rating {
+  display: table;
+  padding-top: 8px;
+}

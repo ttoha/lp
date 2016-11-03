@@ -1,0 +1,122 @@
+/* line 3, ../footer.scss */
+.download-bottom {
+  padding: 40px 0;
+}
+
+/* line 6, ../footer.scss */
+.download-bottom-left {
+  width: 307px;
+  float: left;
+}
+
+/* line 10, ../footer.scss */
+.number-one {
+  width: 150px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 15, ../footer.scss */
+.number-one__text {
+  font-size: 14px;
+  font-weight: bold;
+  color: #464646;
+}
+
+/* line 20, ../footer.scss */
+.download-bottom-middle {
+  width: 384px;
+  float: left;
+}
+
+/* line 24, ../footer.scss */
+.download-bottom-right {
+  width: 307px;
+  float: right;
+}
+
+/* line 28, ../footer.scss */
+.trusted {
+  width: 256px;
+  float: right;
+  background: transparent url(../images/world-map.png) no-repeat center top;
+  text-align: center;
+  font-size: 12px;
+  color: #686868;
+  padding-bottom: 35px;
+}
+
+/* line 37, ../footer.scss */
+.trusted__top {
+  width: 125px;
+  margin: 0 auto 2px;
+}
+
+/* line 41, ../footer.scss */
+.trusted__top strong {
+  font-weight: normal;
+  font-family: 'ProximaNova-Bold';
+}
+
+/* line 45, ../footer.scss */
+.trusted_count {
+  font-size: 24px;
+  color: #1aa1eb;
+}
+
+/* line 50, ../footer.scss */
+.nav {
+  background-color: #fafdff;
+  border-top: 1px #e5eaec solid;
+  border-bottom: 1px #e5eaec solid;
+  display: table;
+  width: 100%;
+  padding: 15px 0;
+}
+
+/* line 58, ../footer.scss */
+.nav-list {
+  display: table;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 63, ../footer.scss */
+.nav__item {
+  float: left;
+  padding: 0 7px;
+}
+
+/* line 67, ../footer.scss */
+.nav__link {
+  font-size: 14px;
+  color: #434343;
+  text-decoration: none;
+}
+
+/* line 73, ../footer.scss */
+.footer-content {
+  padding: 15px 0;
+  text-align: center;
+  background-color: #f4fafd;
+}
+/* line 78, ../footer.scss */
+.footer-content p {
+  font-size: 12px;
+  color: #747a7d;
+  margin-bottom: 5px;
+}
+/* line 83, ../footer.scss */
+.footer-content p a {
+  color: #018fd0;
+}
+/* line 86, ../footer.scss */
+.footer-content p a:hover {
+  text-decoration: underline;
+}
+/* line 89, ../footer.scss */
+.footer-content p.copy {
+  padding-top: 5px;
+  color: #989898;
+}
