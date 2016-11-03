@@ -13,7 +13,6 @@
     "compass": "^0.1.1",
     "grunt": "^1.0.1",
     "grunt-cli": "^1.2.0",
-    "grunt-concat": "^0.1.6",
     "grunt-contrib-compass": "^1.1.1",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-sass": "^1.0.0",
